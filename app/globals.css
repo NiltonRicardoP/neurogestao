@@ -1,0 +1,257 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+
+  /* Tema Oceânico */
+  [data-theme="oceanic"] {
+    --background: 210 100% 98%;
+    --foreground: 217 33% 17%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 217 33% 17%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 217 33% 17%;
+
+    --primary: 211 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 211 100% 95%;
+    --secondary-foreground: 217 33% 17%;
+
+    --muted: 211 50% 95%;
+    --muted-foreground: 215 16% 47%;
+
+    --accent: 211 100% 90%;
+    --accent-foreground: 217 33% 17%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 211 100% 50%;
+  }
+
+  /* Tema Verde Menta */
+  [data-theme="mint"] {
+    --background: 151 63% 96%;
+    --foreground: 156 64% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 156 64% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 156 64% 15%;
+
+    --primary: 151 63% 44%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 151 63% 90%;
+    --secondary-foreground: 156 64% 15%;
+
+    --muted: 151 43% 90%;
+    --muted-foreground: 156 44% 40%;
+
+    --accent: 151 63% 85%;
+    --accent-foreground: 156 64% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 151 43% 85%;
+    --input: 151 43% 85%;
+    --ring: 151 63% 44%;
+  }
+
+  /* Tema Lavanda */
+  [data-theme="lavender"] {
+    --background: 270 100% 98%;
+    --foreground: 271 64% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 271 64% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 271 64% 12%;
+
+    --primary: 270 75% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 270 56% 95%;
+    --secondary-foreground: 271 64% 12%;
+
+    --muted: 270 50% 95%;
+    --muted-foreground: 271 24% 50%;
+
+    --accent: 270 56% 90%;
+    --accent-foreground: 271 64% 12%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 270 40% 85%;
+    --input: 270 40% 85%;
+    --ring: 270 75% 60%;
+  }
+
+  /* Tema Rosa Suave */
+  [data-theme="rose"] {
+    --background: 340 100% 98%;
+    --foreground: 331 74% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 331 74% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 331 74% 15%;
+
+    --primary: 340 80% 55%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 340 60% 96%;
+    --secondary-foreground: 331 74% 15%;
+
+    --muted: 340 50% 95%;
+    --muted-foreground: 331 34% 50%;
+
+    --accent: 340 60% 90%;
+    --accent-foreground: 331 74% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 340 40% 85%;
+    --input: 340 40% 85%;
+    --ring: 340 80% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Indicador visual de tema para depuração */
+body::before {
+  content: attr(data-theme);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 2px 5px;
+  font-size: 10px;
+  z-index: 9999;
+  display: none; /* Remova esta linha para visualizar o tema atual */
+}
+
+/* Classes responsivas adicionais */
+@layer utilities {
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .card-compact {
+    @apply p-2 sm:p-4;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Melhorias para dispositivos móveis */
+@media (max-width: 640px) {
+  .container {
+    @apply px-2;
+  }
+
+  .card-header {
+    @apply p-3;
+  }
+
+  .card-content {
+    @apply p-3;
+  }
+
+  .truncate-mobile {
+    @apply truncate;
+  }
+}
